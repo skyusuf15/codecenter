@@ -70,9 +70,11 @@
                 <div class="top-right links">
                     @auth
                         <a href="{{ url('/home') }}">Home</a>
+                        <a href="{{ url('/codecenter') }}">Only Available page</a>
                     @else
                         <a href="{{ route('login') }}">Login</a>
                         <a href="{{ route('register') }}">Register</a>
+                        <a href="{{ url('/codecenter') }}">Only Available page</a>
                     @endauth
                 </div>
             @endif
