@@ -3,7 +3,7 @@
 <head>
 	<title>Code Center Home</title>
 	<meta name = "viewport" content= "width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" >
-	<link href="{{ url('css/codeCenter.css') }}" rel="stylesheet"/>
+	<link href="{{ url('css/app.css') }}" rel="stylesheet"/>
 </head>
 <body>
 
@@ -174,7 +174,7 @@ alert("Final output: " + new_text )
 	<footer><span>About Us</span> | <span>Terms Of Use</span><center>&copy; Codecenter, 2017</center></footer>
 	
 </body>
-<script type="text/javascript" src="{{ url('js/jquery3.2.1.min.js') }}"></script>
+<script type="text/javascript" src="{{ url('js/app.js') }}"></script>
 	<script>
 		//var userName = prompt("Type your username").trim();
 		var userName = "BETA User";

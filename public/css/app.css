@@ -8350,3 +8350,460 @@ button.close {
   }
 }
 
+body {
+  background: silver;
+  font-size: 16px;
+}
+
+nav.navBar {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  z-index: 10;
+  background: lightskyblue;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 4px;
+  -webkit-box-shadow: 5px 0px 15px #666;
+          box-shadow: 5px 0px 15px #666;
+  width: calc(100% - ((100% - 200px)/2));
+  -webkit-transition: left 0.5s ease;
+  transition: left 0.5s ease;
+}
+
+nav.navBarGone {
+  left: -100%;
+}
+
+nav.navBar small {
+  color: white;
+  margin-top: 3px;
+  border-top: 1px solid white;
+  display: block;
+}
+
+nav.navBar a {
+  text-decoration: none;
+  color: #000;
+}
+
+nav.navBar span {
+  display: block;
+  font-size: 1.1em;
+  padding: 10px 14px;
+  margin: 2px 0px;
+  border-left: 1px solid white;
+  font-weight: bold;
+}
+
+.navBar a:first-of-type span,
+.navBar a span:active {
+  background: lightblue;
+}
+
+nav.navBar small:last-child {
+  color: red;
+  font-size: 1em;
+  padding: 6px 0px 0px 14px;
+}
+
+*::-webkit-scrollbar {
+  background: none;
+}
+
+nav.navBar .postQuestion {
+  left: 0px;
+  width: 100%;
+  max-width: 100%;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.postQuestion * {
+  width: 90%;
+  margin: 5px 5%;
+  border: none;
+  height: 30px;
+  padding: 7px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  resize: none;
+}
+
+.postQuestion *:hover {
+  outline: none;
+}
+
+.postQuestion textarea {
+  height: 70px;
+}
+
+.postQuestion textarea:nth-of-type(2) {
+  height: 50px;
+}
+
+.postQuestion button {
+  background: lightblue;
+  width: 42%;
+  margin: 5px 0% 5px 5%;
+}
+
+.postQuestion button:first-of-type {
+  background: azure;
+  border: 0px solid lightblue;
+}
+
+.postQuestion button:active {
+  color: blue;
+  background: #fff;
+}
+
+section.questionBox {
+  width: 300px;
+  margin-left: calc((100% - 300px)/2);
+  border: 1px solid #1e90ff;
+  text-align: center;
+  background: lightskyblue;
+  border-radius: 18px 18px 6px 6px;
+  padding-bottom: 30px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-top: 40px;
+  overflow: hidden;
+  font-size: 0.9em;
+}
+
+section.questionBox:first-of-type {
+  margin-top: 0px;
+}
+
+section.questionBox .question {
+  width: calc(100% - 5px);
+  color: #444;
+  margin-bottom: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  float: left;
+  background: azure;
+  border-top: 6px solid silver;
+  padding: 7px;
+  text-align: left;
+  white-space: pre-wrap;
+  left: 0px;
+  overflow-x: hidden;
+  word-wrap: break-word;
+}
+
+.question code {
+  color: #666;
+  max-width: 85%;
+  padding: 6px 0% 2% 6px;
+  margin: 0px;
+  background: rgba(0, 0, 0, 0.15);
+  border-left: 2px solid #1E90FF;
+  overflow-x: hidden;
+  font-size: 0.8em;
+  word-wrap: break-word;
+  display: block;
+}
+
+section details {
+  font-size: 13px;
+}
+
+section .ansToggle {
+  display: block;
+  border-radius: 5px 5px;
+  border: 1px solid #1e90ff;
+  padding: 6px 0px;
+  position: absolute;
+  font-size: 17px;
+  border-top-color: transparent;
+  background: lightskyblue;
+  left: calc(50% - 66px);
+  margin-top: 12px;
+  color: white;
+  width: 130px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section .ansToggle:active {
+  border-color: white;
+}
+
+.answerBox {
+  width: 300px;
+  margin-left: calc((100% - 300px)/2);
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 20px 7px 7px 7px;
+  border: 3px solid lightskyblue;
+  border-radius: 7px 7px 14px 14px;
+  overflow-y: hidden;
+  height: auto;
+  background: linear-gradient(lightskyblue, silver 66px);
+  display: none;
+}
+
+span.selLang {
+  border-radius: 3px;
+  background: lightblue;
+  padding: 3px 3px;
+  font-size: 0.7em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid blue;
+}
+
+.answerBox ul.languages {
+  list-style-type: none;
+  border-radius: 3px;
+  display: block;
+  background: lightskyblue;
+  max-width: 100px;
+  overflow: show;
+  margin-top: 3px;
+  padding: 0px;
+  position: absolute;
+  display: none;
+}
+
+.answerBox ul.languages li {
+  display: block;
+  padding: 3px 1px;
+  margin: 3px;
+  background: lightblue;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+ul.languages li:first-of-type {
+  background: rgba(5, 5, 5, 0.5);
+}
+
+.answerBox article.langAns {
+  display: none;
+}
+
+.answerBox article.langAns:first-of-type {
+  display: block;
+}
+
+.answerBox article div.noAns {
+  display: none;
+}
+
+.answerBox article div.noAns:first-child {
+  width: 90%;
+  font-size: 20px;
+  margin: 30px 5%;
+  text-align: center;
+  display: block;
+}
+
+.answerBox .anAnswer {
+  padding-top: 15px;
+  border-top: 1px dotted blue;
+  display: block;
+  margin-top: 10px;
+  font-size: 0.96em;
+}
+
+.anAnswer .uName,
+.anAnswer small {
+  text-align: right;
+  color: #1E90FF;
+  display: block;
+  width: 100%;
+  font-size: 0.8em;
+}
+
+.anAnswer .uName {
+  color: blue;
+}
+
+.answerBox code {
+  width: 95%;
+  text-align: left;
+  display: block;
+  white-space: pre-wrap;
+  background: green;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 4% 5% 4% 2%;
+  border-left: 5px solid #1E90FF;
+  margin-top: 5px;
+  overflow-x: hidden;
+  word-wrap: break-word;
+  font-size: 0.67em;
+}
+
+.answerBox .newAns {
+  width: 100%;
+  margin-bottom: 15px;
+  height: 50px;
+  margin-top: 15px;
+  display: block;
+  padding-top: 5px;
+  border-top: 1px dotted blue;
+}
+
+.answerBox .newAns textArea {
+  height: 100%;
+  width: 75%;
+  resize: none;
+  margin: 0px;
+  border: none;
+  padding: 5px;
+  font-size: 0.6rem;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.answerBox .newAns button {
+  width: 23%;
+  float: right;
+  border-radius: 5px;
+  border: none;
+  margin-top: 20px;
+  color: white;
+  height: 30px;
+  background: #1e90ff;
+}
+
+.newAns textarea:hover,
+.newAns textarea:active {
+  outline: none;
+}
+
+aside.extra {
+  position: fixed;
+  background: white;
+  font-size: 33px;
+  text-align: center;
+  border-radius: 50%;
+  width: 45px;
+  bottom: 45px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  right: calc((100% - 300px)/2);
+  border: 2px solid lightskyblue;
+  z-index: 6;
+  color: lightskyblue;
+  padding-bottom: 3px;
+  height: 45px;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+aside.extra b {
+  height: 40px;
+  font-size: 33px;
+  left: 12px;
+  bottom: 2px;
+  position: absolute;
+}
+
+aside.extra2 {
+  transform: rotate(129deg);
+  -webkit-transform: rotate(129deg);
+  -moz-transform: rotate(129deg);
+  -o-transform: rotate(129deg);
+  -ms-transform: rotate(129deg);
+  color: red;
+  border-color: grey;
+}
+
+aside.extra::first-of-type:active {
+  color: white;
+  background: #1E90FF;
+}
+
+footer {
+  width: 100%;
+  margin: 25px 0% 0% 0%;
+  font-size: 1.4em;
+  text-align: center;
+}
+
+footer center {
+  display: block;
+}
+
+footer center,
+footer span {
+  font-size: 0.6em;
+}
+
+@media only screen and (min-width: 640px) {
+  section.questionBox,
+  .answerBox,
+  .postQuestion {
+    width: 480px;
+    margin-left: calc((100% - 480px)/2);
+  }
+
+  aside.extra:first-of-type {
+    right: calc(100% - (480px * 1.5));
+    height: 70px;
+    width: 70px;
+    font-size: 39px;
+    padding-top: 8px;
+  }
+
+  aside.extraTab {
+    height: auto;
+    width: auto;
+  }
+
+  .questionBox .question,
+  .answerBox .anAnswer {
+    font-size: 0.7em;
+  }
+
+  .answerBox .newAns textarea {
+    font-size: 0.57em;
+  }
+
+  .answerBox .selLang {
+    font-size: 0.4em;
+  }
+
+  .question code {
+    font-size: 0.95em;
+  }
+}
+
+@media only screen and (min-width: 960px) {
+  nav.navBar,
+  nav.navBarGone {
+    left: 0px;
+  }
+
+  nav.navBar {
+    width: calc((100% - 500px)/2);
+  }
+
+  .postQuestion {
+    width: 100%;
+    display: block;
+    margin: 0px;
+  }
+
+  nav.navBar .closeNav {
+    display: block;
+  }
+
+  aside.extra {
+    display: none;
+  }
+}
+
